@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// Componente Navbar súper simple (React + JavaScript puro)
+// Componente Navbar con React Router
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -9,9 +10,14 @@ export default function Navbar() {
 
       {/* Links de navegación */}
       <ul className="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/busqueda">Búsqueda</Link></li>
+        <li><Link to="/input-focus">Input Focus</Link></li>
+        <li><Link to="/dogs">Razas de Perros</Link></li>
+        <li><Link to="/location">Ubicación</Link></li>
+        <li><Link to="/personas">Personas</Link></li>
+        <li><Link to="/random-text">Texto Random</Link></li>
+        <li><Link to="/images">Galería</Link></li>
       </ul>
     </nav>
   );
