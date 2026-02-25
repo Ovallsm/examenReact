@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TokenProvider from './context/TokenProvider.jsx'
 
 const router = createBrowserRouter([
-  { path: "/", element: <CreateGame /> },
+  
 
 ]);
 
