@@ -1,5 +1,4 @@
 import React from "react";
-import "./Navbar.css";
 
 // Componente Navbar súper simple (React + JavaScript puro)
 export default function Navbar() {
