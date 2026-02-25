@@ -18,6 +18,8 @@ export default function Navbar() {
         <li><Link to="/personas">Personas</Link></li>
         <li><Link to="/random-text">Texto Random</Link></li>
         <li><Link to="/images">Galería</Link></li>
+        <li><Link to="/form">Formulario</Link></li>
+        <li><Link to="/view">Ver Datos</Link></li>
       </ul>
     </nav>
   );

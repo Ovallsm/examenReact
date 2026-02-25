@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import TokenProvider from './context/TokenProvider.jsx'
 import BusquedaProductos from './assets/useSearchParams.jsx'
@@ -12,6 +11,8 @@ import RandomTextApi from './assets/RandomTextApi.jsx'
 import ImageGrid from './assets/ImageGrid.jsx'
 import Navbar from './assets/navbarComponent.jsx'
 import Footer from './assets/Footer.jsx'
+import FormPage from './assets/FormPage.jsx'
+import ViewPage from './assets/ViewPage.jsx'
 
 // Componente Layout que contiene el Navbar y Footer
 function Layout() {
@@ -72,6 +73,14 @@ const router = createBrowserRouter([
       { 
         path: "images", 
         element: <ImageGrid /> 
+      },
+      {
+        path: "form",
+        element: <FormPage />
+      },
+      {
+        path: "view",
+        element: <ViewPage />
       }
     ]
   }

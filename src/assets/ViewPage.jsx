@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import TokenContext from "./tokenContext";
+import TokenContext from "../context/tokenContext";
 
 export default function ViewPage() {
   const { token, name, playerId, roomId } = useContext(TokenContext);
