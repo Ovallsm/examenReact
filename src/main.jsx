@@ -1,10 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import TokenProvider from './context/TokenProvider.jsx'
 
-createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  { path: "/", element: <CreateGame /> },
+
+]);
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <TokenProvider>
+      <RouterProvider router={router} />
+    </TokenProvider>
   </StrictMode>,
-)
+);
+
